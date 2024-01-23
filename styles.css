@@ -1,1 +1,186 @@
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+  }
+  
+  body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: #000; 
+    color: yellow;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Moo Lah Lah', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 680px;
+    font-family: 'Moo Lah Lah', sans-serif;
+    color: yellow;
+  }
+  
+  h1,
+  .container,
+  .output {
+    margin: 20px auto;
+     font-family: 'Moo Lah Lah', sans-serif;
+     font-size: 25px;
+  }
+  
+  label,
+  legend {
+    font-weight: bold;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+  }
+  
+button {
+  background-color: #000;
+  color: yellow;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #5cb3fd;
+  cursor: pointer;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: 'Moo Lah Lah', sans-serif;
+  /* Hover effect */
+  &:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+}
+  
+  .clear {
+    background-color: var(--light-pink);
+    color: var(--dark-red);
+    border-color: var(--dark-red);
+  }
+  
+  button,
+  input,
+  select {
+    min-height: 24px;
+  }
+  
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 10px;
+  }
+  
+  .output {
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .output span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .surplus {
+    color: var(--light-green);
+  }
+  
+  .deficit {
+    color: var(--light-pink);
+  }
+  #budget {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out; /* Add a smooth transition for border color */
+  
+    /* Placeholder styling */
+    ::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+  
+    /* Hover effect */
+    &:hover {
+      border-color: #66afe9; /* Change border color on hover */
+    }
+  
+    /* Focus effect */
+    &:focus {
+      outline: none;
+      border-color: #5cb3fd; /* Change border color on focus */
+    }
+  }
+  .last
+  {
+    margin: 0 auto;
+  }
+  ::placeholder {
+    color: #66afe9; 
+    font-style: italic; 
+    font-size: 28px; 
+    font-weight: normal; 
+    
+}
+input
+{
+  background-color: black;
+  border-radius: 10px;
+  color: #66afe9;
+  font-family: 'Moo Lah Lah', sans-serif;
+  font-size: 20px;
+}
+select {
+  padding: 10px;
+  font-size: 24px;
+  border: 1px solid ;
+  border-color:#66afe9;
+  border-radius: 5px ;
+  background-color: black;
+  color:yellow;
+  font-family: 'Moo Lah Lah', sans-serif;
+  cursor: pointer;
+  appearance: none; /* Remove default appearance for certain browsers */
+}
+@media only screen and (max-width: 600px) {
+  main {
+      padding: 10px;
+  }
 
+  h1 {
+      font-size: 24px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  label, legend {
+      font-size: 14px;
+  }
+
+  input, select, button {
+      font-size: 14px;
+  }
+}

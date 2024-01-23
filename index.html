@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+    <title>Calorie Counter</title>
+  </head>
+  <body>
+    <main>
+      <h1><u><i>Calorie Counter</i></u></h1>
+      <div class="container">
+        <form id="calorie-counter">
+          <label for="budget">Total Calories&#128073;</label>
+          <input
+            type="number"
+            min="0"
+            id="budget"
+            placeholder="Enter your total calories distribution"
+            required
+          />
+          <fieldset id="breakfast">
+            <legend>Breakfast&#129382;</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="lunch">
+            <legend>Lunch&#127834;</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Dinner&#127831;</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Snacks&#127856;</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Exercise&#127947;</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <div class="controls">
+            <span>
+              <label for="entry-dropdown">Add food or exercise&#128073;</label>
+              <select id="entry-dropdown" name="options">
+                <option value="breakfast" selected>Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="exercise">Exercise</option>
+              </select>
+              <button type="button" id="add-entry">Add Entry </button>
+            </span>
+          </div>
+          <div class="last">
+            <button type="submit">
+              Calculate Remaining Calories
+            </button>
+            <button type="button" id="clear">Clear</button>
+          </div>
+        </form>
+        <div id="output" class="output hide"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
